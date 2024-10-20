@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+</head>
+<link rel="stylesheet" href="Knowledge_hub_project1.css"/>
+<body>
+                    <!-- navbar -->
+                  <header class="navbar navbar-expand-lg navbar-light bg-secondary m-auto fixed-top">
+                      <a class="navbar-brand" href="#"><img src="https://res.cloudinary.com/dcugknrsq/image/upload/v1717244452/Brown_Illustration_Round_Book_Store_Logo-removebg-preview_1_hpqnhq.png" class="nav-logo ml-3"/></a>
+                      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                        <div class="navbar-nav ml-auto mr-2">
+                          <a class="nav-link active" href="#"><button class="name-color button-name" id="nav-names">Home<span class="sr-only">(current)</span></button></a>
+                          <a class="nav-link" href="#IIT/JEESection" ><button class="name-color button-name" id="nav-names">IIT/JEE<span class="sr-only">(current)</span></button></a>
+                          <a class="nav-link" href="#cseSection" ><button class="name-color button-name" id="nav-names">IT/CSE<span class="sr-only">(current)</span></button></a>
+                          <a class="nav-link" href="#codingpracticeSection"><button class="name-color button-name" id="nav-names">CODING PRACTICE</button></a>
+                          <a class="nav-link" href="#roadmapsSection"><button class="name-color button-name" id="nav-names">ROADMAPS</button></a>
+                          <a class="nav-link" href="#footerSection" ><button class="name-color button-name" id="nav-names">About</button></a>
+                        </div>
+                      </div>
+                  </header>
+        <article>
+                    <!-- carousel -->
+                  <section id="carouselExampleIndicators" class="carousel slide mt-5" data-ride="carousel">
+                    <ol class="carousel-indicators">
+                      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    </ol>
+                    <div class="carousel-inner">
+                      <div class="carousel-item active">
+                        <img src="https://res.cloudinary.com/dcugknrsq/image/upload/v1717223476/Purple_Abstract_Graphic_Design_LinkedIn_Article_Cover_Image_1_x8fvru.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://res.cloudinary.com/dcugknrsq/image/upload/v1717223476/Purple_Abstract_Graphic_Design_LinkedIn_Article_Cover_Image_1_x8fvru.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="carousel-item">
+                        <img src="https://res.cloudinary.com/dcugknrsq/image/upload/v1717223476/Purple_Abstract_Graphic_Design_LinkedIn_Article_Cover_Image_1_x8fvru.png" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </a>
+                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </a>
+                  </section>
+                  <section id="homeSection" class="d-lg-none" onclick="display('nav-name')"> <!--home symbal-->
+                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-house box" viewBox="0 0 16 16">
+                      <path d="M8.707 1.5a1 1 0 0 0-1.414 0L.646 8.146a.5.5 0 0 0 .708.708L2 8.207V13.5A1.5 1.5 0 0 0 3.5 15h9a1.5 1.5 0 0 0 1.5-1.5V8.207l.646.647a.5.5 0 0 0 .708-.708L13 5.793V2.5a.5.5 0 0 0-.5-.5h-1a.5.5 0 0 0-.5.5v1.293zM13 7.207V13.5a.5.5 0 0 1-.5.5h-9a.5.5 0 0 1-.5-.5V7.207l5-5z"/>
+                    </svg>
+                  </section>
+                  <section id="cseSection">                                   <!--id of IT/CSE-->
+                    <div class="container">
+                      <h1 class="course shadow-lg mt-5 text-center">IT/CSE</h1>
+                      <div class="row">
+                        <div class="col-12 col-md-4 col-lg-3">
+                          <div class="card mt-3 shadow-lg">
+                            <img src="https://mgcconsulting.com.br/wp-content/uploads/2014/12/khan-logo.png" class="img">
+                            <div class="details">
+                              <h1 class="img-heading">Khan Academy</h1>
+                              <p>"Khan Academy offers free online educational resources covering a wide range of subjects for learners of all ages."  
+                              <!-- Button trigger modal -->
+                              <a href="https://youtu.be/_U7QaeZvk58?si=q_Qu8molOxOw4DWJ" target> 
+                                <button type="button" class="youtube-button" data-toggle="modal" data-target="#exampleModal">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                                    <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                                  </svg>
+                                </button>
+                                </a>
+                              </p>
+                              <details>
+                                <summary class="detail-summary">read more</summary>
+                                <ul>
+                                <li><a href="https://www.khanacademy.org/">Khan Academy</a></li>
+                                <li><a href="https://en.wikipedia.org/wiki/Khan_Academy">Wikipedia</a></li>
+                                </ul>
+                              </details>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-3">
+                          <div class="card mt-3 shadow-lg">
+                            <img src="https://cyberseniors.org/wp-content/uploads/2021/09/coursera.jpeg" class="img"> <!--image -->
+                            <div class="details">
+                              <h1 class="img-heading">Coursera</h1>
+                              <p>Coursera offers courses from universities and colleges worldwide, covering a wide range of topics including IT...
+                              <!-- Button trigger modal -->
+                              <a href="https://youtu.be/bjFScgPPK3U?si=4cO_pgB6RcJzAjMo" target> 
+                                <button type="button" class="youtube-button" data-toggle="modal" data-target="#exampleModal">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                                    <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                                  </svg>
+                                </button>
+                              </p>
+                              <details>                                                      <!--details-->
+                                <summary class="detail-summary">read more</summary>
+                                <ul>
+                                <li><a href="https://www.coursera.org/courseraplus?utm_source=bg&utm_medium=sem&utm_campaign=b2c_india_coursera-plus_coursera_ftcof_subscription_arte_jun-21_dr_sem_rsa_bing_lg-all&utm_content=B2C&campaignid=415374026&adgroupid=1253444572411850&device=c&keyword=coursera&matchtype=e&network=o&devicemodel=&adpostion=&creativeid=&hide_mobile_promo&msclkid=a32cf7544d1f14ba25a8913709205f4f&utm_term=coursera">Coursera</a></li>
+                                <li><a href="https://en.wikipedia.org/wiki/Coursera">Wikipedia</a></a></li>
+                                </ul>
+                              </details>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-3">                            <!--edX-->
+                          <div class="card mt-3 shadow-lg">
+                            <img src="https://www.classcentral.com/report/wp-content/uploads/2022/03/edx-free-courses-768x384.png" class="img"> <!--image -->
+                            <div class="details">
+                              <h1 class="img-heading">edX</h1>
+                              <p>Similar to Coursera, edX provides online courses from universities and institutions globally. They have a wide range of IT and CSE...
+                              <!-- Button trigger modal -->
+                              <a href="https://youtu.be/kBh2yQR1i6U?si=2AM-hvXELQk19P7G" target> 
+                                <button type="button" class="youtube-button" data-toggle="modal" data-target="#exampleModal">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                                    <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                                  </svg>
+                                </button>
+                              </p>
+                              <details>                                                      <!--details-->
+                                <summary class="detail-summary">read more</summary>
+                                <ul>
+                                <li><a href="https://www.edx.org/">edX</a></li>
+                                <li><a href="https://en.wikipedia.org/wiki/EdX">Wikipedia</a></a></li>
+                                </ul>
+                              </details>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-3">                                                  <!--udemy-->
+                          <div class="card mt-3 shadow-lg">
+                            <img src="https://th.bing.com/th/id/OIP.yj8WGyHnYgUm5Y9wFLQK6gAAAA?rs=1&pid=ImgDetMain" class="img"> <!--image -->
+                            <div class="details">
+                              <h1 class="img-heading">udemy</h1>
+                              <p>Udemy is a platform where experts in various fields create and offer their courses. It has a vast selection of IT and CSE courses at different...
+                              <!-- Button trigger modal -->
+                              <a href="https://youtu.be/KcQoJS9R6Lk?si=eYvajHmhkFT13yIl" target> 
+                                <button type="button" class="youtube-button" data-toggle="modal" data-target="#exampleModal">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                                    <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                                  </svg>
+                                </button>
+                              </p>
+                              <details>                                                      <!--details-->
+                                <summary class="detail-summary">read more</summary>
+                                <ul>
+                                <li><a href="https://www.udemy.com/">Udemy</a></li>         <!--wesite link-->
+                                <li><a href="https://en.wikipedia.org/wiki/Udemy">Wikipedia</a></a></li>
+                                </ul>
+                              </details>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-3">                                                  <!--Codecademy-->
+                          <div class="card mt-3 shadow-lg">
+                            <img src="https://th.bing.com/th/id/OIP.ZH8fSFi8ARjM4qLXc1OnAgAAAA?rs=1&pid=ImgDetMain" class="img"> <!--image -->
+                            <div class="details">
+                              <h1 class="img-heading">Codecademy</h1>
+                              <p>Codecademy focuses on teaching coding skills through interactive lessons. It covers various programming languages and concepts.
+                              <!-- Button trigger modal -->
+                              <a href="https://youtu.be/esoGCi2rZf4?si=ttSQYqql3VyWdlIk" target> 
+                                <button type="button" class="youtube-button" data-toggle="modal" data-target="#exampleModal">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                                    <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                                  </svg>
+                                </button>
+                              </p>
+                              <details>                                                      <!--details-->
+                                <summary class="detail-summary">read more</summary>
+                                <ul>
+                                <li><a href="https://www.codecademy.com/pages/paid-plans">Codecademy</a></li>         <!--wesite link-->
+                                <li><a href="https://en.wikipedia.org/wiki/Codecademy">Wikipedia</a></a></li>
+                                </ul>
+                              </details>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-3">                                                  <!--MIT OpenCourseWare: -->
+                          <div class="card mt-3 shadow-lg">
+                            <img src="https://www.euroresidentes.com/tecnologia/noticias-internet/wp-content/uploads/sites/5/2017/02/MIT-Opencourseware.jpg" class="img"> <!--image -->
+                            <div class="details">
+                              <h1 class="img-heading">MIT OpenCourseWare:</h1>
+                              <p>Massachusetts Institute of Technology (MIT) provides free access to course materials for many of its IT and CSE courses through MIT OpenCourseWare.
+                              <!-- Button trigger modal -->
+                                <button type="button" class="youtube-button" data-toggle="modal" data-target="#exampleModal">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                                    <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                                  </svg>
+                                </button>
+                              </p>
+                              <details>                                                      <!--details-->
+                                <summary class="detail-summary">read more</summary>
+                                <ul>
+                                <li><a href="https://ocw.mit.edu/">MIT OpenCourseWare: </a></li>         <!--wesite link-->
+                                <li><a href="https://en.wikipedia.org/wiki/MIT_OpenCourseWare">Wikipedia</a></a></li>
+                                </ul>
+                              </details>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-3">                                                  <!--Stanford Online:-->
+                          <div class="card mt-3 shadow-lg">
+                            <img src="https://i1.wp.com/onlinecoursesgalore.com/wp-content/uploads/2021/02/stanford-university-courses-online-1.jpg?resize=800%2C445&ssl=1" class="img"> <!--image -->
+                            <div class="details">
+                              <h1 class="img-heading">Stanford Online:</h1>
+                              <p>Stanford University offers online courses in IT and CSE through its Stanford Online platform. These courses cover a wide range of topics and are taught by Stanford faculty.
+                              <!-- Button trigger modal -->
+                                <button type="button" class="youtube-button" data-toggle="modal" data-target="#exampleModal">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                                    <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                                  </svg>
+                                </button>
+                              </p>
+                              <details>                                                      <!--details-->
+                                <summary class="detail-summary">read more</summary>
+                                <ul>
+                                <li><a href="https://online.stanford.edu/">Stanford Online:</a></li>         <!--wesite link-->
+                                <li><a href="https://en.wikipedia.org/wiki/Stanford_Online">Wikipedia</a></a></li>
+                                </ul>
+                              </details>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-3">                                                  <!--Udacity-->
+                          <div class="card mt-3 shadow-lg">
+                            <img src="https://static.startuptalky.com/2021/10/udacity_startuptalky_logo.png" class="img"> <!--image -->
+                            <div class="details">
+                              <h1 class="img-heading">Udacity</h1>
+                              <p>Udacity offers nanodegree programs in IT and CSE fields, focusing on practical skills and project-based learning. It's suitable for both beginners and experienced professionals.
+                              <!-- Button trigger modal -->
+                                <button type="button" class="youtube-button" data-toggle="modal" data-target="#exampleModal">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                                    <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                                  </svg>
+                                </button>
+                              </p>
+                              <details>                                                      <!--details-->
+                                <summary class="detail-summary">read more</summary>
+                                <ul>
+                                <li><a href="https://www.udacity.com/">Udacity:</a></li>         <!--wesite link-->
+                                <li><a href="https://en.wikipedia.org/wiki/Udacity">Wikipedia</a></a></li>
+                                </ul>
+                              </details>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-3">                                                  <!--Pluralsight:-->
+                          <div class="card mt-3 shadow-lg">
+                            <img src="https://logos-download.com/wp-content/uploads/2021/01/Pluralsight_Logo-2048x1074.png" class="img"> <!--image -->
+                            <div class="details">
+                              <h1 class="img-heading">Pluralsight:</h1>
+                              <p>Pluralsight is a subscription-based platform offering IT and CSE courses, particularly focusing on technology-related skills like programming, cloud computing, and cybersecurity.
+                              <!-- Button trigger modal -->
+                                <button type="button" class="youtube-button" data-toggle="modal" data-target="#exampleModal">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                                    <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                                  </svg>
+                                </button>
+                              </p>
+                              <details>                                                      <!--details-->
+                                <summary class="detail-summary">read more</summary>
+                                <ul>
+                                <li><a href="https://www.pluralsight.com/">Pluralsight</a></li>         <!--wesite link-->
+                                <li><a href="https://en.wikipedia.org/wiki/Pluralsight">Wikipedia</a></a></li>
+                                </ul>
+                              </details>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col-12 col-md-4 col-lg-3">                                                  <!--LinkedIn Learning-->
+                          <div class="card mt-3 shadow-lg">
+                            <img src="https://static.startuptalky.com/2020/08/Startuptalky_linkedin-learning-logo.jpg" class="img"> <!--image -->
+                            <div class="details">
+                              <h1 class="img-heading">LinkedIn Learning</h1>
+                              <p>Formerly known as Lynda.com, LinkedIn Learning offers a vast library of video courses on IT and CSE topics. It covers everything from programming languages to data analysis...
+                              <!-- Button trigger modal -->
+                                <button type="button" class="youtube-button" data-toggle="modal" data-target="#exampleModal">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                                    <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                                  </svg>
+                                </button>
+                              </p>
+                              <details>                                                      <!--details-->
+                                <summary class="detail-summary">read more</summary>
+                                <ul>
+                                <li><a href="https://learning.linkedin.com/cx/get-started?src=pa-bi&trk=sem-bi_campid.395443068_asid.1290826976402076_crid.80676773752406_kw.linkedin%20learning_d.c_tid.kwd-80676872846056:loc-90_n.o_mt.e_geo.155594&mcid=6842178359988908202&cid=&gclid=57156af39ac11d05ef640c9799eab011&gclsrc=3p.ds&msclkid=57156af39ac11d05ef640c9799eab011">LinkedIn Learning</a></li>         <!--wesite link-->
+                                <li><a href="https://en.wikipedia.org/wiki/LinkedIn_Learning">Wikipedia</a></a></li>
+                                </ul>
+                              </details>
+                            </div>
+                          </div>
+                        </div>
+                      </div>  
+                    </section>                                                  <!--id IT/CSE end tag-->
+                    <section id="IIT/JEESection">                                   <!--id iit/jee start-->
+                      <div class="container">
+                        <h1 class="course shadow-lg mt-5 text-center">IIT/JEE</h1>
+                      <div class="row">
+                        <div class="col-12 col-md-4 col-lg-3">                                                  <!--Unacademy-->
+                          <div class="card mt-3 shadow-lg">
+                            <img src="https://techstory.in/wp-content/uploads/2016/05/Unacademy-logo.png" class="img"> <!--image -->
+                            <div class="details">
+                              <h1 class="img-heading">Unacademy</h1>
+                              <p>Unacademy offers a wide range of courses for IIT/JEE preparation, taught by experienced educators. It provides live classes, recorded lectures, practice questions, and doubt-solving sessions.
+                              <!-- Button trigger modal -->
+                                <button type="button" class="youtube-button" data-toggle="modal" data-target="#exampleModal">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                                    <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                                  </svg>
+                                </button>
+                              </p>
+                              <details>                                                      <!--details-->
+                                <summary class="detail-summary">read more</summary>
+                                <ul>
+                                <li><a href="https://unacademy.com/goal/upsc-civil-services-examination-ias-preparation/KSCGY">Unacademy</a></li>         <!--wesite link-->
+                                <li><a href="https://en.wikipedia.org/wiki/Unacademy">Wikipedia</a></a></li>
+                                </ul>
+                              </details>
+                            </div>
+                        </div>
+                      </div>
+                    <div class="col-12 col-md-4 col-lg-3">                                                  <!--BYJU's-->
+                          <div class="card mt-3 shadow-lg">
+                            <img src="https://cdn.i.haymarketmedia.asia/?n=campaign-india/content/byjus1.png&h=630&w=1200&q=75&v=20170226&c=1" class="img"> <!--image -->
+                            <div class="details">
+                              <h1 class="img-heading">BYJU's</h1>
+                              <p>BYJU's is one of the largest online learning platforms in India, offering comprehensive study materials, video lectures, and practice questions for IIT-JEE preparation.
+                              <!-- Button trigger modal -->
+                                <button type="button" class="youtube-button" data-toggle="modal" data-target="#exampleModal">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                                    <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                                  </svg>
+                                </button>
+                              </p>
+                              <details>                                                      <!--details-->
+                                <summary class="detail-summary">read more</summary>
+                                <ul>
+                                <li><a href="https://byjus.com/">BYJU's</a></li>         <!--wesite link-->
+                                <li><a href="https://en.wikipedia.org/wiki/Byju%27s">Wikipedia</a></a></li>
+                                </ul>
+                              </details>
+                            </div>
+                        </div>
+                      </div>
+                                <div class="col-12 col-md-4 col-lg-3">                                                  <!--Toppr-->
+                                  <div class="card mt-3 shadow-lg">
+                                    <img src="https://entrackr.com/wp-content/uploads/2017/10/Toppr-image.jpg" class="img"> <!--image -->
+                                    <div class="details">
+                                      <h1 class="img-heading">Toppr</h1>
+                                      <p>Toppr provides personalized learning solutions for students preparing for various entrance exams, including IIT-JEE. It offers adaptive practice questions, mock tests, and video lectures.
+                                      <!-- Button trigger modal -->
+                                        <button type="button" class="youtube-button" data-toggle="modal" data-target="#exampleModal">
+                                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                                            <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                                          </svg>
+                                        </button>
+                                      </p>
+                                      <details>                                                      <!--details-->
+                                        <summary class="detail-summary">read more</summary>
+                                        <ul>
+                                        <li><a href="https://www.toppr.com/ask/">Toppr</a></li>         <!--wesite link-->
+                                        <li><a href="https://en.everybodywiki.com/Toppr">Wikipedia</a></a></li>
+                                        </ul>
+                                      </details>
+                                    </div>
+                                </div>
+                              </div>
+                              <div class="col-12 col-md-4 col-lg-3">
+                                <div class="card mt-3 shadow-lg">
+                                  <img src="https://mgcconsulting.com.br/wp-content/uploads/2014/12/khan-logo.png" class="img">
+                                  <div class="details">
+                                    <h1 class="img-heading">Khan Academy</h1>
+                                    <p>"Khan Academy offers free online educational resources covering a wide range of subjects for learners of all ages."  
+                                    <!-- Button trigger modal -->
+                                      <button type="button" class="youtube-button" data-toggle="modal" data-target="#exampleModal">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                                          <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                                        </svg>
+                                      </button>
+                                    </p>
+                                    <details>
+                                      <summary class="detail-summary">read more</summary>
+                                      <ul>
+                                      <li><a href="https://www.khanacademy.org/">Khan Academy</a></li>
+                                      <li><a href="https://en.wikipedia.org/wiki/Khan_Academy">Wikipedia</a></li>
+                                      </ul>
+                                    </details>
+                                  </div>
+                                </div>
+                              </div>
+                            <div class="col-12 col-md-4 col-lg-3">                                                  <!--Vedantu-->
+                              <div class="card mt-3 shadow-lg">
+                                <img src="https://ciolookindia.com/wp-content/uploads/2021/04/8.jpg" class="img"> <!--image -->
+                                <div class="details">
+                                  <h1 class="img-heading">Vedantu</h1>
+                                  <p>Vedantu offers live online classes, study materials, and doubt-solving sessions for IIT-JEE preparation. It also provides a platform for students to interact with teachers and peers.
+                                  <!-- Button trigger modal -->
+                                    <button type="button" class="youtube-button" data-toggle="modal" data-target="#exampleModal">
+                                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                                        <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                                      </svg>
+                                    </button>
+                                  </p>
+                                  <details>                                                      <!--details-->
+                                    <summary class="detail-summary">read more</summary>
+                                    <ul>
+                                    <li><a href="https://www.vedantu.com/">Vedantu</a></li>         <!--wesite link-->
+                                    <li><a href="https://en.wikipedia.org/wiki/Vedantu">Wikipedia</a></a></li>
+                                    </ul>
+                                  </details>
+                                </div>
+                            </div>
+                          </div>
+                        <div class="col-12 col-md-4 col-lg-3">                                                  <!--EtoosIndia-->
+                          <div class="card mt-3 shadow-lg pb-5">
+                            <img src="https://sp-ao.shortpixel.ai/client/to_auto,q_glossy,ret_img,w_760,h_428/https://blog.shikshacoach.com/wp-content/uploads/2022/03/etoosindia-1024x576.jpg" class="img"> <!--image -->
+                            <div class="details">
+                              <h1 class="img-heading">EtoosIndia</h1>
+                              <p> Provides video lectures by experienced faculty covering the entire syllabus of IIT-JEE.
+                              <!-- Button trigger modal -->
+                                <button type="button" class="youtube-button" data-toggle="modal" data-target="#exampleModal">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                                    <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                                  </svg>
+                                </button>
+                              </p>
+                              <details>                                                      <!--details-->
+                                <summary class="detail-summary">read more</summary>
+                                <ul>
+                                <li><a href="https://www.etoosindia.com/index.do">EtoosIndia</a></li>         <!--wesite link-->
+                                <li><a href="https://en.wikipedia.org/wiki/Physics_Wallah">Wikipedia</a></a></li>
+                                </ul>
+                              </details>
+                            </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-4 col-lg-3">                                                  <!--Allen Career Institute-->
+                        <div class="card mt-3 shadow-lg pb-5">
+                          <img src="https://d2nlyei8v64kfj.cloudfront.net/uploads/c/2017/9/c-allen-career-institute-kota-3057.jpg" class="img"> <!--image -->
+                          <div class="details">
+                            <h1 class="img-heading">Allen Career Institute</h1>
+                            <p>Offers online courses and study materials for IIT-JEE preparation, developed by experienced faculty members.
+                            <!-- Button trigger modal -->
+                              <button type="button" class="youtube-button" data-toggle="modal" data-target="#exampleModal">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                                  <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                                </svg>
+                              </button>
+                            </p>
+                            <details>                                                      <!--details-->
+                              <summary class="detail-summary">read more</summary>
+                              <ul>
+                              <li><a href="https://www.allen.ac.in/">Allen Career Institute</a></li>         <!--wesite link-->
+                              <li><a href="https://en.wikipedia.org/wiki/Allen_Institute">Wikipedia</a></a></li>
+                              </ul>
+                            </details>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-4 col-lg-3">                                                  <!--FIITJEE-->
+                      <div class="card mt-3 shadow-lg">
+                        <img src="https://th.bing.com/th/id/OIP.PNdE9cDGbkRilE-unoupgAHaE9?rs=1&pid=ImgDetMain" class="img"> <!--image -->
+                        <div class="details">
+                          <h1 class="img-heading">FIITJEE</h1>
+                          <p>Provides online courses, study materials, and test series for IIT-JEE preparation, along with doubt clearing sessions.
+                          <!-- Button trigger modal -->
+                            <button type="button" class="youtube-button" data-toggle="modal" data-target="#exampleModal">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                                <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                              </svg>
+                            </button>
+                          </p>
+                          <details>                                                      <!--details-->
+                            <summary class="detail-summary">read more</summary>
+                            <ul>
+                            <li><a href="https://www.fiitjee.com/">FIITJEE</a></li>         <!--wesite link-->
+                            <li><a href="https://en.wikipedia.org/wiki/FIITJEE">Wikipedia</a></a></li>
+                            </ul>
+                          </details>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                    </section>                                                       <!--id iit/jee end-->
+                    <section id="codingpracticeSection">                                   <!--id codingpracticeSection start-->
+                      <div class="container">
+                        <h1 class="course shadow-lg mt-5 text-center">CODING PRACTICE</h1>
+                      <div class="row">
+                    <div class="col-12 col-md-4 col-lg-3">                                                  <!--LeetCode-->
+                      <div class="card mt-3 shadow-lg">
+                        <img src="https://flexsub.shop/content/images/2022/06/1c5ce46e-266f-43f0-b543-75bf341239b5.png" class="img"> <!--image -->
+                        <div class="details">
+                          <h1 class="img-heading">LeetCode</h1>
+                          <p>Offers a vast collection of coding problems categorized by difficulty level and topic, along with discussion forums and solutions shared by the community
+                          <!-- Button trigger modal -->
+                            <button type="button" class="youtube-button" data-toggle="modal" data-target="#exampleModal">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                                <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                              </svg>
+                            </button>
+                          </p>
+                          <details>                                                      <!--details-->
+                            <summary class="detail-summary">read more</summary>
+                            <ul>
+                            <li><a href="https://leetcode.com/">LeetCode</a></li>         <!--wesite link-->
+                            <li><a href="https://en.wikipedia.org/wiki/LeetCode">Wikipedia</a></a></li>
+                            </ul>
+                          </details>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-4 col-lg-3">                                                  <!--HackerRank-->
+                    <div class="card mt-3 shadow-lg pb-5">
+                      <img src="https://api.pixonic.com/uploads/ckeditor/pictures/173/content_content_HackerRank-2400x1070_black.jpg" class="img"> <!--image -->
+                      <div class="details">
+                        <h1 class="img-heading">HackerRank</h1>
+                        <p>Provides coding challenges, competitions, and interview preparation kits covering a wide range of programming languages and topics.                      
+                        <!-- Button trigger modal -->
+                          <button type="button" class="youtube-button" data-toggle="modal" data-target="#exampleModal">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                              <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                            </svg>
+                          </button>
+                        </p>
+                        <details>                                                      <!--details-->
+                          <summary class="detail-summary">read more</summary>
+                          <ul>
+                          <li><a href="https://www.hackerrank.com/">HackerRank</a></li>         <!--wesite link-->
+                          <li><a href="https://en.wikipedia.org/wiki/HackerRank">Wikipedia</a></a></li>
+                          </ul>
+                        </details>
+                      </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-3">                                                  <!--CodeSignal-->
+                  <div class="card mt-3 shadow-lg pb-4">
+                    <img src="https://fiverr-res.cloudinary.com/images/t_main1,q_auto,f_auto,q_auto,f_auto/gigs/240746098/original/cd9bc47a0879e5e68066c91f10f6900521ff362e/create-an-amazing-custom-logo-animation-for-your-brand.png" class="img"> <!--image -->
+                    <div class="details">
+                      <h1 class="img-heading">CodeSignal</h1>
+                      <p> Offers coding challenges, tournaments, and interview preparation modules to enhance coding skills and prepare for technical interviews.
+                      <!-- Button trigger modal -->
+                        <button type="button" class="youtube-button" data-toggle="modal" data-target="#exampleModal">
+                          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                            <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                          </svg>
+                        </button>
+                      </p>
+                      <details>                                                      <!--details-->
+                        <summary class="detail-summary">read more</summary>
+                        <ul>
+                        <li><a href="https://codesignal.com/">CodeSignal</a></li>         <!--wesite link-->
+                        <li><a href="https://en.wikipedia.org/wiki/CodeSignal">Wikipedia</a></a></li>
+                        </ul>
+                      </details>
+                    </div>
+                </div>
+              </div>
+              <div class="col-12 col-md-4 col-lg-3">                                                  <!--Codecademy-->
+                <div class="card mt-3 shadow-lg">
+                  <img src="https://th.bing.com/th/id/OIP.GbvT6fIzshgQa_iUOVCYRAHaE8?rs=1&pid=ImgDetMain" class="img"> <!--image -->
+                  <div class="details">
+                    <h1 class="img-heading">Codecademy</h1>
+                    <p>Provides interactive coding lessons and projects in various programming languages, along with a community forum for discussion and support.
+                    <!-- Button trigger modal -->
+                      <button type="button" class="youtube-button" data-toggle="modal" data-target="#exampleModal">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                          <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                        </svg>
+                      </button>
+                    </p>
+                    <details>                                                      <!--details-->
+                      <summary class="detail-summary">read more</summary>
+                      <ul>
+                      <li><a href="https://www.codecademy.com/pages/paid-plans">Codecademy</a></li>         <!--wesite link-->
+                      <li><a href="https://en.wikipedia.org/wiki/Codecademy">Wikipedia</a></a></li>
+                      </ul>
+                    </details>
+                  </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3">                                                  <!--Codewars-->
+              <div class="card mt-3 shadow-lg">
+                <img src="https://uploads-ssl.webflow.com/62e95dddfb380a0e61193e7d/63c96f663436595d79a62d43_codewars-og-image.png" class="img"> <!--image -->
+                <div class="details">
+                  <h1 class="img-heading">Codewars</h1>
+                  <p>Offers coding challenges called "kata" that are created by the community, covering a wide range of difficulty levels and programming concepts.
+                  <!-- Button trigger modal -->
+                    <button type="button" class="youtube-button" data-toggle="modal" data-target="#exampleModal">
+                      <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                        <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                      </svg>
+                    </button>
+                  </p>
+                  <details>                                                      <!--details-->
+                    <summary class="detail-summary">read more</summary>
+                    <ul>
+                    <li><a href="https://www.codewars.com/">Codewars</a></li>         <!--wesite link-->
+                    <li><a href="https://en.wikipedia.org/wiki/Cod_Wars">Wikipedia</a></a></li>
+                    </ul>
+                  </details>
+                </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-3">                                                  <!--Exercism-->
+            <div class="card mt-3 shadow-lg">
+              <img src="https://www.justalternativeto.com/wp-content/uploads/2021/07/Exercism.io_.png" class="img"> <!--image -->
+              <div class="details">
+                <h1 class="img-heading">Exercism</h1>
+                <p>Exercism provides coding exercises and mentorship in various programming languages to help learners improve their coding skills.
+                <!-- Button trigger modal -->
+                  <button type="button" class="youtube-button" data-toggle="modal" data-target="#exampleModal">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                      <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                    </svg>
+                  </button>
+                </p>
+                <details>                                                      <!--details-->
+                  <summary class="detail-summary">read more</summary>
+                  <ul>
+                  <li><a href="https://exercism.org/">Exercism</a></li>         <!--wesite link-->
+                  <li><a href="https://en.wikipedia.org/wiki/Exercism">Wikipedia</a></a></li>
+                  </ul>
+                </details>
+              </div>
+          </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-3">                                                  <!--GeeksforGeeks-->
+            <div class="card mt-3 shadow-lg">
+              <img src="https://storage.googleapis.com/kaggle-datasets-images/1953020/3220116/a89a095579fd8e74c1c7363f41955072/dataset-cover.png?t=2022-02-23-14-01-13?t=2022-02-23-14-09-26" class="img"> <!--image -->
+              <div class="details">
+                <h1 class="img-heading">GeeksforGeeks</h1>
+                <p>GeeksforGeeks offers a wide range of practice problems, coding challenges, and articles on various topics related to computer science and programming.
+                <!-- Button trigger modal -->
+                  <button type="button" class="youtube-button" data-toggle="modal" data-target="#exampleModal">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                      <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                    </svg>
+                  </button>
+                </p>
+                <details>                                                      <!--details-->
+                  <summary class="detail-summary">read more</summary>
+                  <ul>
+                  <li><a href="https://www.geeksforgeeks.org/">GeeksforGeeks</a></li>         <!--wesite link-->
+                  <li><a href="https://www.geeksforgeeks.org/about/">Wikipedia</a></a></li>
+                  </ul>
+                </details>
+              </div>
+          </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-3">                                                  <!--TopCoder-->
+            <div class="card mt-3 shadow-lg">
+              <img src="https://res.cloudinary.com/practicaldev/image/fetch/s--pRAuAuJM--/c_limit%2Cf_auto%2Cfl_progressive%2Cq_auto%2Cw_880/https://qph.fs.quoracdn.net/main-qimg-50a4b77bcfa6f89c4ce779e6bf9c3217" class="img"> <!--image -->
+              <div class="details">
+                <h1 class="img-heading">TopCoder</h1>
+                <p> TopCoder hosts coding competitions, challenges, and algorithmic problem-solving tasks for programmers of all skill levels.
+                <!-- Button trigger modal -->
+                  <button type="button" class="youtube-button" data-toggle="modal" data-target="#exampleModal">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                      <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                    </svg>
+                  </button>
+                </p>
+                <details>                                                      <!--details-->
+                  <summary class="detail-summary">read more</summary>
+                  <ul>
+                  <li><a href="https://www.topcoder.com/">TopCoder</a></li>         <!--wesite link-->
+                  <li><a href="https://en.wikipedia.org/wiki/Topcoder">Wikipedia</a></a></li>
+                  </ul>
+                </details>
+              </div>
+          </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-3">                                                  <!--Project Euler-->
+            <div class="card mt-3 shadow-lg">
+              <img src="https://i.ytimg.com/vi/OVaumVFjRTc/maxresdefault.jpg" class="img"> <!--image -->
+              <div class="details">
+                <h1 class="img-heading">Project Euler</h1>
+                <p>Project Euler offers a series of challenging mathematical/computer programming problems that require more than just mathematical insights...
+                <!-- Button trigger modal -->
+                  <button type="button" class="youtube-button" data-toggle="modal" data-target="#exampleModal">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                      <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                    </svg>
+                  </button>
+                </p>
+                <details>                                                      <!--details-->
+                  <summary class="detail-summary">read more</summary>
+                  <ul>
+                  <li><a href="https://projecteuler.net/">Project Euler</a></li>         <!--wesite link-->
+                  <li><a href="https://en.wikipedia.org/wiki/Project_Euler">Wikipedia</a></a></li>
+                  </ul>
+                </details>
+              </div>
+          </div>
+          </div>
+          <div class="col-12 col-md-4 col-lg-3">                                                  <!--HackerEarth-->
+            <div class="card mt-3 shadow-lg">
+              <img src="https://startuptalky.com/content/images/2020/05/Startuptalky-hackerearth-logo.jpg" class="img"> <!--image -->
+              <div class="details">
+                <h1 class="img-heading">HackerEarth</h1>
+                <p> HackerEarth provides coding challenges, hackathons, and practice problems in various domains like algorithms, data structures, machine learning, and more.
+                <!-- Button trigger modal -->
+                  <button type="button" class="youtube-button" data-toggle="modal" data-target="#exampleModal">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-youtube" viewBox="0 0 16 16">
+                      <path d="M8.051 1.999h.089c.822.003 4.987.033 6.11.335a2.01 2.01 0 0 1 1.415 1.42c.101.38.172.883.22 1.402l.01.104.022.26.008.104c.065.914.073 1.77.074 1.957v.075c-.001.194-.01 1.108-.082 2.06l-.008.105-.009.104c-.05.572-.124 1.14-.235 1.558a2.01 2.01 0 0 1-1.415 1.42c-1.16.312-5.569.334-6.18.335h-.142c-.309 0-1.587-.006-2.927-.052l-.17-.006-.087-.004-.171-.007-.171-.007c-1.11-.049-2.167-.128-2.654-.26a2.01 2.01 0 0 1-1.415-1.419c-.111-.417-.185-.986-.235-1.558L.09 9.82l-.008-.104A31 31 0 0 1 0 7.68v-.123c.002-.215.01-.958.064-1.778l.007-.103.003-.052.008-.104.022-.26.01-.104c.048-.519.119-1.023.22-1.402a2.01 2.01 0 0 1 1.415-1.42c.487-.13 1.544-.21 2.654-.26l.17-.007.172-.006.086-.003.171-.007A100 100 0 0 1 7.858 2zM6.4 5.209v4.818l4.157-2.408z"/>
+                    </svg>
+                  </button>
+                </p>
+                <details>                                                      <!--details-->
+                  <summary class="detail-summary">read more</summary>
+                  <ul>
+                  <li><a href="https://www.hackerearth.com/">HackerEarth</a></li>         <!--wesite link-->
+                  <li><a href="https://en.wikipedia.org/wiki/HackerEarth">Wikipedia</a></a></li>
+                  </ul>
+                </details>
+              </div>
+          </div>
+          </div>
+            </div>  
+                    </section>                                                              <!--id codingpracticeSection end-->
+                    <section id="roadmapsSection">                                   <!--id roadmapsSection start-->
+                      <div class="container">
+                        <h1 class="course shadow-lg mt-5 text-center">ROADMAPS</h1>
+                      <div class="row">
+                    <div class="col-12 col-md-4 col-lg-3">                                                  <!--Developer Roadmaps-->
+                      <div class="card mt-3 shadow-lg">
+                        <img src="https://www.onlinemanipal.com/wp-content/uploads/2022/11/ROAD-MAP-FOR-A-FULL-STACK-DEVELOPER--1024x441.jpg" class="img"> <!--image -->
+                        <div class="details">
+                          <h1 class="img-heading">Developer Roadmaps</h1>
+                          <p>Here's a general roadmap for becoming a developer</p>
+                          <details>                                             <!--details-->
+                            <summary class="detail-summary">read more</summary>
+                            <ul>
+                            <li><a href="https://roadmap.sh/">Developer Roadmaps</a></li>         <!--wesite link-->
+                            </ul>
+                          </details>
+                        </div>
+                    </div>
+                  </div>
+                  </div>
+                  </div>
+                    </section>   
+        </article>                                                     <!--id roadmapsSection end-->
+                    <!-- footer -->
+                    <footer id="footerSection">
+                      <div class="footer-bg mt-3">
+                          <div class="container">
+                            <div class="row">
+                              <div class="col-12">
+                                <div class="d-flex flex-row justify-content-center">
+                                  <img src="https://res.cloudinary.com/dcugknrsq/image/upload/v1717244452/Brown_Illustration_Round_Book_Store_Logo-removebg-preview_1_hpqnhq.png" class="footer-logo"/>
+                                </div>
+                                <div class="d-flex flex-row justify-content-center">
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-instagram footer-sublogo" viewBox="0 0 16 16">
+                                    <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                                  </svg>
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-twitter-x footer-sublogo" viewBox="0 0 16 16">
+                                    <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                                  </svg>
+                                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope footer-sublogo" viewBox="0 0 16 16">
+                                    <path d="M0 4a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm2-1a1 1 0 0 0-1 1v.217l7 4.2 7-4.2V4a1 1 0 0 0-1-1zm13 2.383-4.708 2.825L15 11.105zm-.034 6.876-5.64-3.471L8 9.583l-1.326-.795-5.64 3.47A1 1 0 0 0 2 13h12a1 1 0 0 0 .966-.741M1 11.105l4.708-2.897L1 5.383z"/>
+                                  </svg>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                      </div>
+                    </footer>
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+</html>

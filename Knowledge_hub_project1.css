@@ -1,0 +1,83 @@
+#nav-names{
+    color:#fff;
+    font-family:"Roboto";
+}
+.nav-logo{
+    width:40px;
+    background-size:0px;
+}
+.card{
+    background-color:rgb(242, 248, 249);
+    border-bottom-left-radius:8px;
+    border-bottom-right-radius: 8px;
+}
+.img{
+    width:100%;
+}
+.img-heading{
+    font-size:20px;
+    font-family:"Roboto";
+    color: black;
+    font-weight: bold;
+}
+.details{
+    padding: 10px;
+}
+.youtube-button{
+    border-width: 0px;
+    padding:0px;
+    height: 0px;
+
+}
+.youtube-button:hover{
+    color: red;
+}
+.fix{
+    position: fixed;
+}
+a:hover{
+    color: red;
+}
+.detail-summary{
+    font-weight: bold;
+}
+/*  footer section*/
+.footer-bg{
+    background-color: rgb(39, 37, 37);
+}
+.footer-logo{
+    height:50px;
+    margin-top: 10px;
+}
+.footer-sublogo{
+    margin: 15px;
+    background-color:lightslategray;
+    border-radius:10px;
+} 
+.course{    /*iit/jee */
+    color:greenyellow;
+    font-weight: bold;
+    font-family: "Roboto";
+    background-image: linear-gradient(#2196f3,#f44336);
+}
+.box{
+    background-color: lightblue;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 0px;
+    left:0px;
+    z-index: 1;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    border-color:black;
+    border-style: solid;
+    border-width: 2px;
+}
+.name-color:hover{
+    background-color: #2196f3;
+}
+.button-name{
+    background-color: transparent;
+    border-width: 0px;
+    border-style: solid;
+}
